@@ -1,0 +1,8 @@
+datasources:e4301f10b5f54e833d9644eff069069ada31a29a
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:52cb38fc4a0c7dd25d176b0185d15250d3ddb6fa
+--test Test Data Driven.Invalid username
+--test Test Data Driven.Invalid password
+--test Test Data Driven.Special characters
+--test Test Data Driven.Invalid username and password

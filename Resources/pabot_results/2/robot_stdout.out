@@ -1,0 +1,28 @@
+==============================================================================
+Test Data Driven :: data driven                                               
+==============================================================================
+Special characters                                                      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\robot-dataDriven\Resources\test_data_driven.robot:15
+    T:  Special characters    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\robot-dataDriven\Resources\test_data_driven.robot:15
+      validate unsuccessful login    @=$    %^&*$#
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\robot-dataDriven\Resources\test_data_driven.robot:22
+      Fill the login form    ${username}    ${password}
+      |  ${username} = @=$ (str)
+      |  ${password} = %^&*$# (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\robot-dataDriven\Resources\test_data_driven.robot:34
+      Input Text    name:username    ${username}
+      |  ${username} = @=$ (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'name:username' not found.
+------------------------------------------------------------------------------
+Test Data Driven :: data driven                                       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\robot-dataDriven\Resources\pabot_results\2\output.xml

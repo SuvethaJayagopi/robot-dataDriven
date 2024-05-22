@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-16T10:45:19.049815" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Data Driven" source="D:\robot-dataDriven\Resources\test_data_driven.robot">
+<test id="s1-t1" name="Invalid username and password" line="16">
+<kw name="validate unsuccessful login">
+<kw name="Open the browser with url">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:19.249167" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-16T10:45:19.249167" elapsed="3.412593"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:22.663770" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-16T10:45:22.661760" elapsed="2.929416"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T10:45:25.591176" elapsed="0.035674"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-16T10:45:25.626850" elapsed="0.002997"/>
+</kw>
+<status status="PASS" start="2024-05-16T10:45:19.248728" elapsed="6.382123"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:25.636427" level="INFO">Typing text 'abc' into text field 'name:username'.</msg>
+<msg time="2024-05-16T10:45:30.735621" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-16T10:45:30.735621" level="FAIL">Element with locator 'name:username' not found.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-16T10:45:25.634418" elapsed="5.106332">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T10:45:30.740750" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T10:45:30.740750" elapsed="0.000000"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-05-16T10:45:25.630851" elapsed="5.109899">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="verify the error message is correct">
+<status status="NOT RUN" start="2024-05-16T10:45:30.740750" elapsed="0.000000"/>
+</kw>
+<kw name="close browser session">
+<status status="NOT RUN" start="2024-05-16T10:45:30.740750" elapsed="0.000000"/>
+</kw>
+<arg>abc</arg>
+<arg>abc123</arg>
+<status status="FAIL" start="2024-05-16T10:45:19.247688" elapsed="11.494698">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-16T10:45:30.742386" elapsed="2.172357"/>
+</kw>
+<status status="FAIL" start="2024-05-16T10:45:19.246679" elapsed="13.668064">Element with locator 'name:username' not found.</status>
+</test>
+<doc>data driven</doc>
+<status status="FAIL" start="2024-05-16T10:45:19.059834" elapsed="13.854909"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Data Driven">Test Data Driven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

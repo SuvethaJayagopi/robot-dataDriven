@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.0 (Python 3.12.2 on win32)" generated="2024-05-16T10:45:37.204713" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Data Driven" source="D:\robot-dataDriven\Resources\test_data_driven.robot">
+<test id="s1-t1" name="Invalid username" line="13">
+<kw name="validate unsuccessful login">
+<kw name="Open the browser with url">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:19.242167" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-16T10:45:19.242167" elapsed="3.244026"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:22.488201" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-16T10:45:22.487206" elapsed="2.654275"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T10:45:25.141481" elapsed="0.105315"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-16T10:45:25.247789" elapsed="0.004047"/>
+</kw>
+<status status="PASS" start="2024-05-16T10:45:19.241149" elapsed="6.010687"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:25.254830" level="INFO">Typing text 'abc' into text field 'name:username'.</msg>
+<msg time="2024-05-16T10:45:30.409393" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-1.png"&gt;&lt;img src="0-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-16T10:45:30.409393" level="FAIL">Element with locator 'name:username' not found.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-16T10:45:25.252837" elapsed="5.161677">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T10:45:30.414514" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T10:45:30.414514" elapsed="0.000000"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-05-16T10:45:25.251836" elapsed="5.162678">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="verify the error message is correct">
+<status status="NOT RUN" start="2024-05-16T10:45:30.414514" elapsed="0.000000"/>
+</kw>
+<kw name="close browser session">
+<status status="NOT RUN" start="2024-05-16T10:45:30.414514" elapsed="0.000000"/>
+</kw>
+<arg>abc</arg>
+<arg>admin123</arg>
+<status status="FAIL" start="2024-05-16T10:45:19.240167" elapsed="11.174347">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-16T10:45:30.414514" elapsed="2.170937"/>
+</kw>
+<status status="FAIL" start="2024-05-16T10:45:19.239175" elapsed="13.346276">Element with locator 'name:username' not found.</status>
+</test>
+<test id="s1-t2" name="Invalid password" line="14">
+<kw name="validate unsuccessful login">
+<kw name="Open the browser with url">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:19.238141" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-16T10:45:19.237091" elapsed="4.106489"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:23.345122" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-16T10:45:23.344101" elapsed="3.637973"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T10:45:26.982074" elapsed="0.059022"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-16T10:45:27.041096" elapsed="0.003689"/>
+</kw>
+<status status="PASS" start="2024-05-16T10:45:19.236096" elapsed="7.808689"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:27.049988" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T10:45:27.046958" elapsed="0.442435"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:27.489393" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg time="2024-05-16T10:45:27.557122" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T10:45:27.489393" elapsed="0.156850"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:27.647234" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
+<arg>${login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T10:45:27.646243" elapsed="1.235775"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-16T10:45:27.044785" elapsed="1.837233"/>
+</kw>
+<kw name="verify the error message is correct">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:29.211444" level="INFO">${result} = Invalid credentials</msg>
+<var>${result}</var>
+<arg>${login_error_message}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T10:45:28.883016" elapsed="0.328428"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Invalid credentials</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-05-16T10:45:29.211444" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-16T10:45:28.882018" elapsed="0.329426"/>
+</kw>
+<kw name="close browser session">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-16T10:45:29.211444" elapsed="2.171637"/>
+</kw>
+<status status="PASS" start="2024-05-16T10:45:29.211444" elapsed="2.171637"/>
+</kw>
+<arg>Admin</arg>
+<arg>abc</arg>
+<status status="PASS" start="2024-05-16T10:45:19.235090" elapsed="12.149111"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-16T10:45:31.384201" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-16T10:45:19.234090" elapsed="12.151248"/>
+</test>
+<test id="s1-t3" name="Special characters" line="15">
+<kw name="validate unsuccessful login">
+<kw name="Open the browser with url">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:19.272895" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-16T10:45:19.270491" elapsed="3.385871"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:22.659752" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-16T10:45:22.657370" elapsed="1.698829"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T10:45:24.356199" elapsed="0.159762"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-16T10:45:24.515961" elapsed="0.009998"/>
+</kw>
+<status status="PASS" start="2024-05-16T10:45:19.269559" elapsed="5.257403"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:24.533591" level="INFO">Typing text '@=$' into text field 'name:username'.</msg>
+<msg time="2024-05-16T10:45:29.676154" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="2-selenium-screenshot-1.png"&gt;&lt;img src="2-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-16T10:45:29.676154" level="FAIL">Element with locator 'name:username' not found.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-16T10:45:24.528955" elapsed="5.157383">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T10:45:29.686338" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T10:45:29.686338" elapsed="0.000000"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-05-16T10:45:24.527959" elapsed="5.158379">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="verify the error message is correct">
+<status status="NOT RUN" start="2024-05-16T10:45:29.686338" elapsed="0.000000"/>
+</kw>
+<kw name="close browser session">
+<status status="NOT RUN" start="2024-05-16T10:45:29.686338" elapsed="0.000000"/>
+</kw>
+<arg>@=$</arg>
+<arg>%^&amp;*$#</arg>
+<status status="FAIL" start="2024-05-16T10:45:19.268545" elapsed="10.417793">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-16T10:45:29.686338" elapsed="2.153841"/>
+</kw>
+<status status="FAIL" start="2024-05-16T10:45:19.260968" elapsed="12.579211">Element with locator 'name:username' not found.</status>
+</test>
+<test id="s1-t4" name="Invalid username and password" line="16">
+<kw name="validate unsuccessful login">
+<kw name="Open the browser with url">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:19.249167" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-16T10:45:19.249167" elapsed="3.412593"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:22.663770" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-16T10:45:22.661760" elapsed="2.929416"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T10:45:25.591176" elapsed="0.035674"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-16T10:45:25.626850" elapsed="0.002997"/>
+</kw>
+<status status="PASS" start="2024-05-16T10:45:19.248728" elapsed="6.382123"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T10:45:25.636427" level="INFO">Typing text 'abc' into text field 'name:username'.</msg>
+<msg time="2024-05-16T10:45:30.735621" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="3-selenium-screenshot-1.png"&gt;&lt;img src="3-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-16T10:45:30.735621" level="FAIL">Element with locator 'name:username' not found.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-16T10:45:25.634418" elapsed="5.106332">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T10:45:30.740750" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T10:45:30.740750" elapsed="0.000000"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-05-16T10:45:25.630851" elapsed="5.109899">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="verify the error message is correct">
+<status status="NOT RUN" start="2024-05-16T10:45:30.740750" elapsed="0.000000"/>
+</kw>
+<kw name="close browser session">
+<status status="NOT RUN" start="2024-05-16T10:45:30.740750" elapsed="0.000000"/>
+</kw>
+<arg>abc</arg>
+<arg>abc123</arg>
+<status status="FAIL" start="2024-05-16T10:45:19.247688" elapsed="11.494698">Element with locator 'name:username' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-16T10:45:30.742386" elapsed="2.172357"/>
+</kw>
+<status status="FAIL" start="2024-05-16T10:45:19.246679" elapsed="13.668064">Element with locator 'name:username' not found.</status>
+</test>
+<doc>data driven</doc>
+<status status="FAIL" start="2024-05-16T10:45:18.999000" elapsed="13.549293"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="3" skip="0" id="s1" name="Test Data Driven">Test Data Driven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
